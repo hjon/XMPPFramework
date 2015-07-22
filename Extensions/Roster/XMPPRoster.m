@@ -411,7 +411,7 @@ enum XMPPRosterFlags
         
         [multicastDelegate xmppRoster:self didReceiveRosterItem:item];
         
-        if (hasRoster || [self isRosterItem:item])
+        if (hasRoster)
         {
             [xmppRosterStorage handleRosterItem:item xmppStream:xmppStream];
         }
